@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.nav-item:first-child img {
+    width: 5vw;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vh;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-item:last-child{
+    display: flex;
+    gap: 50px;
+}
+
+.logo{
+    font-weight: bold;
+}
