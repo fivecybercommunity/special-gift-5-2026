@@ -4,13 +4,23 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    font-size: 16px;
+}
+
 a{
     text-decoration: none;
     color: inherit; 
 }
 
 .nav-item:first-child img {
-    width: 5vw;
+    width: 7vw;
+    max-width: 100px;
+}
+
+.nav-item:first-child {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 header{
@@ -31,9 +41,116 @@ header{
 
 .nav-item:last-child{
     display: flex;
-    gap: 50px;
+    gap: 7vw;
+    font-size: 1.2rem;
 }
 
 .logo{
     font-weight: bold;
+}
+
+.jumbotron{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    height: 70vh;
+    margin-bottom: 10vh;
+}
+
+.jumbotron img{
+    width: 20vw;
+}
+
+.jumbotron h1{
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.jumbotron h3{
+    font-weight: normal;
+}
+
+.jumbotron .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* display: flex; */
+    background-color: #CBE4DE;
+    z-index: -100;
+    
+}
+
+.jumbotron .background img{
+    height: max(100vh, 100vw*394/700);
+    width: auto;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.jumbotron .filter{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #144534;
+    filter: saturate(5);
+    opacity: 0.2;
+    z-index: 3;
+}
+
+.custom-shape-divider-bottom-1687267225 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687267225 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 173px;
+}
+
+.custom-shape-divider-bottom-1687267225 .shape-fill {
+    fill: #1B4332AB;
+}
+
+.custom-shape-divider-bottom-1687267747 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687267747 svg {
+    position: relative;
+    display: block;
+    width: calc(192% + 1.3px);
+    height: 173px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1687267747 .shape-fill {
+    fill: #144534;
+}
+
+.shape-divider-continue{
+    height: 100px;
+    background-color: #144534;
+}
+
+.perkenalan{
+    padding: 100px;
+    background-color: #144534;
 }
