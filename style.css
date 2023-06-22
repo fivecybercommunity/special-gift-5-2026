@@ -8,6 +8,10 @@ body{
     background-color: var(--green2);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* variables */
 :root{
     --white : white;
