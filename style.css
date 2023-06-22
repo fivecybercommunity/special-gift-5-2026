@@ -4,6 +4,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-color: var(--green2);
+}
+
 /* variables */
 :root{
     --white : white;
@@ -87,6 +91,15 @@ footer .medsos i{
     font-size: 2rem;
 }
 
+@media only screen and (max-width: 767px) {
+    .jumbotron h1{
+        font-size: 2rem;
+    }
+    .nav-item:first-child{
+        font-size: 1.25rem;
+    }
+}
+
 
 /* header */
 .nav-item:first-child img {
@@ -115,6 +128,24 @@ header{
     gap: 7vw;
 }
 
+@media only screen and (max-width: 767px) {
+    .nav-item:last-child{
+        display: none;
+    }
+    
+    .nav-item:first-child img {
+        width: 20vw;
+    } 
+
+    header{
+        justify-content: center;
+    }
+    
+    .nav-item:first-child{
+        width: 60%;
+        text-align: center;
+    }
+}
 
 
 
@@ -129,7 +160,7 @@ header{
     margin-bottom: 10vh;
 }
 
-.jumbotron img{
+.jumbotron > img{
     width: 20vw;
 }
 
@@ -168,6 +199,17 @@ header{
     filter: saturate(5);
     opacity: 0.2;
     z-index: 3;
+}
+
+@media only screen and (max-width: 767px) {
+    .jumbotron{
+        flex-direction: column;
+    }
+
+    .jumbotron > img{
+        width: 60vw;
+        max-width: 250px;
+    }
 }
 
 
@@ -298,8 +340,22 @@ header{
     }
 }
 
-body{
-    background-color: var(--green2);
+
+
+@media only screen and (max-width: 767px) {
+    .perkenalan-wrapper{
+        position: relative;
+        bottom: 7.5vh;
+    }
+
+    .perkenalan{
+        flex-direction: column-reverse;
+        padding: 100px 10vw;
+    }
+
+    .perkenalan img{
+        width: 100%;
+    }
 }
 
 
@@ -318,15 +374,22 @@ body{
     background-color: var(--white);
 }
 
+@media only screen and (max-width: 767px) {
+    .karya .slider{
+        width: 80%;
+        height: 200px;
+    }
+}
+
 /*Daftar*/
 .daftar {
-    height: 300px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 10vh;
+    padding: 40px;
     gap: 50px;
 }
 
