@@ -305,9 +305,10 @@ header{
     background-color: var(--green5);
 }
  
-.perkenalan img{
-    width: 30vw;
+.perkenalan .swiper{
+    width: 50vw;
     height: auto;
+    min-width: 400px;
 }
 
 .custom-shape-divider-top-1687339576 {
@@ -357,8 +358,9 @@ header{
         padding: 100px 10vw;
     }
 
-    .perkenalan img{
+    .perkenalan .swiper{
         width: 100%;
+        min-width: unset !important;
     }
 }
 
@@ -412,3 +414,19 @@ footer .medsos{
     display: flex;
     gap: 20px;
 }
+
+.swiper {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+  .swiper-slide img{
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+      .swiper-button-prev::after, .swiper-button-next::after{
+        content: "" !important;
+      }
+    
+  }

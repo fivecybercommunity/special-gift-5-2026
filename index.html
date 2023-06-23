@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
 </head>
 <body>
@@ -68,7 +73,22 @@
                 Di Ekskul ini, kalian akan dikenalkan terkait dasar-dasar pemrograman, terutama berkaitan dengan pembuatan web. Hal yang diperlukan pun sederhana, yaitu Laptop dan kemauan. <br>
                 Bagi kamu yang tertarik dengan dunia “<b>Programming</b>”, cocok nih buat gabung ke komunitas FCC. <br>
             </p>
-            <img src="https://www.whitescreen.online/image/white-background.png" alt="">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="./src/foto-kegiatan (1).jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./src/foto-kegiatan (2).jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+            </div>
         </div>
 
         <div class="custom-shape-divider-top-1687339576">
@@ -104,5 +124,31 @@
         <p class="copyright">FCC &copy 2023</p>
     </footer>
 
+
+
+
+      <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+      </script>
 </body>
 </html>
