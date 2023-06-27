@@ -306,27 +306,29 @@ header{
 }
  
 .perkenalan .slider-container{
-    width: 800px;
-    height: 400px;
-    background-color: wheat;
-
+    height: 100%;
+    width: 80%;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    border-radius: 5%;
 }
 
 .slide{
     transition: all 0.25s ease-in-out;
+    width: 100%;
 }
 .slide img{
     height: 100%;
 }
 
 .slider-wrapper{
+    width: 35vw;
+    max-width: 600px;
+    /* height: 400px; */
+    aspect-ratio: 3/2;
     position: relative;
-    width:70vw;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,10 +339,11 @@ header{
 
     background-color: var(--green2);
     color: var(--green3);
-    font-size: 3rem;
+    font-size:2.5rem;
 
-    height: 5rem;
-    width: 5rem;
+    height: 20%;
+    aspect-ratio: 1/1;
+    /* width: 5rem; */
     /* padding: 10px; */
     border-radius: 50%;
     display: flex;
@@ -348,6 +351,8 @@ header{
     align-items: center;
     z-index: 3;
     top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .slider--btn:last-child{
@@ -398,19 +403,20 @@ header{
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     .perkenalan-wrapper{
         position: relative;
-        bottom: 7.5vh;
+        bottom: 12vh;
     }
 
     .perkenalan{
         flex-direction: column-reverse;
         padding: 100px 10vw;
+        gap: 10vw;
     }
 
-    .perkenalan img{
-        width: 100%;
+    .slider-wrapper{
+        width: 80vw;
     }
 }
 
