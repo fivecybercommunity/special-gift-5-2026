@@ -305,6 +305,9 @@ header{
     background-color: var(--green5);
 }
  
+.perkenalan .deskripsi{
+    max-width: 800px;
+}
 .perkenalan .slider-container{
     height: 100%;
     width: 80%;
