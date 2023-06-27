@@ -305,10 +305,62 @@ header{
     background-color: var(--green5);
 }
  
-.perkenalan img{
-    width: 30vw;
-    height: auto;
+.perkenalan .slider-container{
+    width: 800px;
+    height: 400px;
+    background-color: wheat;
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
+
+.slide{
+    transition: all 0.25s ease-in-out;
+}
+.slide img{
+    height: 100%;
+}
+
+.slider-wrapper{
+    position: relative;
+    width:70vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider--btn {
+    position: absolute;
+
+    background-color: var(--green2);
+    color: var(--green3);
+    font-size: 3rem;
+
+    height: 5rem;
+    width: 5rem;
+    /* padding: 10px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    top:50%;
+}
+
+.slider--btn:last-child{
+    
+    right: 0;
+
+}
+
+.slider--btn:first-child{
+    left: 0rem;
+
+}
+
 
 .custom-shape-divider-top-1687339576 {
     width: 100%;
