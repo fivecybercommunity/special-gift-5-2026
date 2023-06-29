@@ -184,6 +184,8 @@ header{
     right: 0;
     background-color: var(--green2);
     z-index: -100;
+
+    overflow: hidden;width: 100vw;height: 100vh;
 }
 
 .jumbotron .background img{
