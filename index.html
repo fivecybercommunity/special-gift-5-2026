@@ -29,8 +29,9 @@
     </header>
     
     <div class="jumbotron">
-        <div class="background">
-            <img src="./src/background.jpeg" alt="">
+        <div class="background" style="overflow: hidden;">
+            <img src="./src/background.jpeg" alt="" id="background-img"
+            style="position: relative; top: 0;">
             <div class="filter"></div>
         </div>
         <img src="./src/Logo Hero.png" alt="">
@@ -160,6 +161,14 @@
                 Element.style.transform = `translateX(${counter*-100}%)`
             });
         }
+
+        let background = document.querySelector('#background-img')
+
+        window.addEventListener("scroll", ()=>{
+            let value = window.scrollY;
+
+            background.style.top = value*0.5 + "px"
+        })
     </script>
 
 </body>
