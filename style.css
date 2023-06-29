@@ -433,16 +433,38 @@ header{
     gap: 30px;
 }
 
-.karya .slider {
-    width: 600px;
-    height: 400px;
-    background-color: var(--white);
+.karya-item {
+    height: max(20vw,250px);
+    max-height: 300px;
+    width: max(25%, 350px);
+    max-width: 400px;
+    box-shadow: 4px 4px 10px var(--green4);
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.karya-item img{
+    width: 100%;
+    border-radius: 35px;
+}
+
+.karya-item  h4{
+    text-align: center;
+    color: var(--green1);
+    font-size: 1.25rem;
+    margin-top: auto;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 767px) {
     .karya .slider{
         width: 80%;
         height: 200px;
+    }
+    .karya-item{
+        height: 70vw;
+        width: 80%;
+        
     }
 }
 

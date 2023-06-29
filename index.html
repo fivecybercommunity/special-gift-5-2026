@@ -94,31 +94,6 @@
 
             </div>
 
-            <script>
-                const slides = document.querySelectorAll(".slide")
-                const nextBtn = document.getElementById("nextBtn")
-                const prevBtn = document.getElementById("prevBtn")
-
-                let counter = 0;
-
-                nextBtn.addEventListener("click", ()=>{
-                    counter++;
-                    carousel();
-                })
-
-                prevBtn.addEventListener("click", ()=>{
-                    counter--;
-                    carousel();
-                })
-                
-                function carousel(){
-                    counter = counter==slides.length ? slides.length-1: counter<0?  0: counter;
-                    slides.forEach(function (Element){
-                        Element.style.transform = `translateX(${counter*-100}%)`
-                    });
-                }
-            </script>
-
         </div>
 
         <div class="custom-shape-divider-top-1687339576">
@@ -130,9 +105,16 @@
     
     <div class="karya">
         <h1 class="judul">KARYA KAMI</h1>
-
-        <div class="slider">
-
+        <div class="karya-item">
+            <a href="https://fivecybercommunity.github.io/kelompok-2022/">
+                <img src="./src/kelompok-2022.png" alt="">
+                
+                
+            </a>
+            <a href="https://fivecybercommunity.github.io/kelompok-2022/">
+                <h4>Website Kelompok</h4>
+                
+            </a>
         </div>
     </div>
     
@@ -152,7 +134,33 @@
             <a href="https://github.com/fivecybercommunity"><i class="bi bi-github"></i></a>
         </div>
         <p class="copyright">FCC &copy 2023</p>
+
     </footer>
+
+    <script>
+        const slides = document.querySelectorAll(".slide")
+        const nextBtn = document.getElementById("nextBtn")
+        const prevBtn = document.getElementById("prevBtn")
+
+        let counter = 0;
+
+        nextBtn.addEventListener("click", ()=>{
+            counter++;
+            carousel();
+        })
+
+        prevBtn.addEventListener("click", ()=>{
+            counter--;
+            carousel();
+        })
+        
+        function carousel(){
+            counter = counter==slides.length ? slides.length-1: counter<0?  0: counter;
+            slides.forEach(function (Element){
+                Element.style.transform = `translateX(${counter*-100}%)`
+            });
+        }
+    </script>
 
 </body>
 </html>
