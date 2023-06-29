@@ -223,7 +223,7 @@ header{
     bottom: 15vh;
 }
 
-.custom-shape-divider-bottom-1687336638 {
+.wave-1 {
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -231,20 +231,20 @@ header{
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1687336638 svg {
+.wave-1 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-bottom-1687336638 .shape-fill {
+.wave-1 .shape-fill {
     fill: #1B4332A8;
 }
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1687336638 svg {
+    .wave-1 svg {
         width: calc(100% + 1.3px);
         height: 173px;
     }
@@ -252,13 +252,13 @@ header{
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1687336638 svg {
+    .wave-1 svg {
         width: calc(100% + 1.3px);
         height: 80px;
     }
 }
 
-.custom-shape-divider-bottom-1687338392 {
+.wave-2 {
     position: relative;
     z-index: -1;
     width: 100%;
@@ -267,7 +267,7 @@ header{
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1687338392 svg {
+.wave-2 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -275,13 +275,13 @@ header{
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1687338392 .shape-fill {
+.wave-2 .shape-fill {
     fill: #144534;
 }
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1687338392 svg {
+    .wave-2 svg {
         width: calc(100% + 1.3px);
         height: 173px;
     }
@@ -289,7 +289,7 @@ header{
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-bottom-1687338392 svg {
+    .wave-2 svg {
         width: calc(100% + 1.3px);
         height: 80px;
     }
@@ -370,13 +370,13 @@ header{
 }
 
 
-.custom-shape-divider-top-1687339576 {
+.wave-3 {
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 
-.custom-shape-divider-top-1687339576 svg {
+.wave-3 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -384,13 +384,13 @@ header{
     transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1687339576 .shape-fill {
+.wave-3 .shape-fill {
     fill: #144534;
 }
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-top-1687339576 svg {
+    .wave-3 svg {
         width: calc(100% + 1.3px);
         height: 173px;
     }
@@ -398,7 +398,7 @@ header{
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-    .custom-shape-divider-top-1687339576 svg {
+    .wave-3 svg {
         width: calc(123% + 1.3px);
         height: 63px;
     }
