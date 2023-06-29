@@ -328,9 +328,9 @@ header{
 
 .slider-wrapper{
     width: 35vw;
+    height: 24vw;
     max-width: 600px;
-    /* height: 400px; */
-    aspect-ratio: 3/2;
+    max-height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -419,7 +419,8 @@ header{
     }
 
     .slider-wrapper{
-        width: 80vw;
+        width: min(80vw,420px);
+        height: min(54vw,280px);
     }
 }
 
