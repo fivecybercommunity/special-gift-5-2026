@@ -160,8 +160,9 @@ header{
     justify-content: center;
     align-items: center;
     gap: 10vw;
-    height: 70vh;
-    margin-bottom: 10vh;
+    height: 90vh;
+    padding-bottom: 10vh;
+    box-sizing: border-box;
 }
 
 .jumbotron > img{
@@ -210,6 +211,7 @@ header{
 @media only screen and (max-width: 767px) {
     .jumbotron{
         flex-direction: column;
+        box-sizing: content-box;
     }
 
     .jumbotron > img{
@@ -222,15 +224,21 @@ header{
 /* perkenalan */
 .perkenalan-wrapper{
     position: relative;
-    bottom: 15vh;
+    z-index: 5;
 }
+
+/* .wave-1,.wave-2{
+    display: none;
+} */
 
 .wave-1 {
     position: absolute;
+    z-index: 1;
+    bottom: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-200px);
 }
 
 .wave-1 svg {
@@ -261,12 +269,13 @@ header{
 }
 
 .wave-2 {
-    position: relative;
-    z-index: -1;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-250px);
 }
 
 .wave-2 svg {
