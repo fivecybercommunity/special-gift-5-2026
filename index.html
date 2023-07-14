@@ -181,10 +181,12 @@
 
         window.addEventListener("scroll", ()=>{
             let value = window.scrollY;
-
-            background.style.top = value*0.5 + "px"
-            wave2.style.transform = `rotate(180deg) translateY( ${-250 + value*0.2}px)`;
-            wave1.style.transform = `rotate(180deg) translateY( ${-200 + value*0.4}px)`;
+            if(value <= window.innerHeight){
+                background.style.top = value*0.5 + "px"
+                wave2.style.transform = `rotate(180deg) translateY( ${-250 + value*0.2}px)`;
+                wave1.style.transform = `rotate(180deg) translateY( ${-200 + value*0.4}px)`;
+                
+            }
         })
     </script>
 

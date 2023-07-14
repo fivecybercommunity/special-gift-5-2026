@@ -45,7 +45,12 @@ a{
 
 .nav-item:last-child{
     font-size: 1.2rem;
-}    
+}
+
+.nav-item:last-child a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}  
 
 .judul-utama{
     color: var(--green4);
@@ -87,12 +92,21 @@ a{
     border-radius: 15px;
 }
 
+.daftar a:hover{
+    background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
+}
+
 footer{
     color: var(--green2);
 }
 
 footer .medsos i{
     font-size: 2rem;
+    transition: color ease 1s;
+}
+
+footer .medsos i:hover{
+    color: var(--green3);
 }
 
 @media only screen and (max-width: 767px) {
@@ -101,6 +115,12 @@ footer .medsos i{
     }
     .nav-item:first-child{
         font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .jumbotron h1{
+        font-size: 2.5rem;
     }
 }
 
@@ -150,6 +170,7 @@ header{
         text-align: center;
     }
 }
+
 
 
 
@@ -220,6 +241,16 @@ header{
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .jumbotron{
+        height: 100vh;
+    }
+
+    .jumbotron > img{
+        width: 30vw;
+        /* max-width: 250px; */
+    }
+}
 
 /* perkenalan */
 .perkenalan-wrapper{
