@@ -78,6 +78,11 @@ a{
     text-align: center;
 }
 
+.karya h4:hover{
+    color: var(--green3);
+    text-decoration: underline;
+}
+
 .daftar h1{
     font-size: 1.5rem;
     color: var(--green4);
@@ -257,10 +262,6 @@ header{
     position: relative;
     z-index: 5;
 }
-
-/* .wave-1,.wave-2{
-    display: none;
-} */
 
 .wave-1 {
     position: absolute;
