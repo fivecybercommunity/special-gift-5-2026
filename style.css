@@ -239,6 +239,10 @@ header{
         width: 60vw;
         max-width: 250px;
     }
+
+    .jumbotron .judul {
+        padding-bottom: 20vh;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -248,7 +252,6 @@ header{
 
     .jumbotron > img{
         width: 30vw;
-        /* max-width: 250px; */
     }
 }
 
