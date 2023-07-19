@@ -229,13 +229,13 @@
 
         function renderConfetti(){
             end = Date.now() + 5* 1000
-            if(window.location.hash === "#52026") frame();
+            frame();
         }
         window.addEventListener('hashchange', ()=>{
             if(window.location.hash === "#52026") renderConfetti();
         })
         
-        if(window.location.hash === "#52026") renderConfetti();
+        if(window.location.hash === "#52026") {renderConfetti();}
 
         let pass=""
         let timeout=null
@@ -253,7 +253,9 @@
             pass += key 
             if (pass == "fcc") {
                 colors = ["#2E8A99", "#2E8A99"]
-                renderConfetti()
+                setTimeout(shoot, 0);
+                setTimeout(shoot, 100);
+                setTimeout(shoot, 200);
                 pass = ""
             } else if (pass == "sman5") {
                 colors = ["#FFF400", "#006D35"]
@@ -261,6 +263,32 @@
                 pass=""
             }
         })
+        
+        function shoot() {
+            const defaults = {
+                spread: 360,
+                ticks: 50,
+                gravity: 0,
+                decay: 0.94,
+                startVelocity: 30,
+                shapes: ["star"],
+                colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+            };
+            
+            confetti({
+                ...defaults,
+                particleCount: 40,
+                scalar: 1.2,
+                shapes: ["star"],
+            });
+
+            confetti({
+                ...defaults,
+                particleCount: 10,
+                scalar: 0.75,
+                shapes: ["circle"],
+            });
+        }
     </script>
 
 </body>
