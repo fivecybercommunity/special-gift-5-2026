@@ -102,10 +102,6 @@ a{
     background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
 }
 
-.daftar p{
-    background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
-}
-
 footer{
     color: var(--green2);
 }
