@@ -91,7 +91,7 @@ a{
 .daftar p{
     font-weight: bold;
     font-size: 1.75rem;
-    background-color: var(--green3);
+    /**background-color: var(--green3);**/
     padding: 10px 30px;
     color: var(--white);
     border-radius: 15px;
