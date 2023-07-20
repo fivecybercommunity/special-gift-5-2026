@@ -95,7 +95,7 @@ a{
     padding: 10px 30px;
     color: var(--white);
     border-radius: 15px;
-    border: none;
+    border-width: 0;
 }
 
 .daftar button:disabled{
