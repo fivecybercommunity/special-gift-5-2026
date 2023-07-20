@@ -132,3 +132,7 @@ function shoot() {
         shapes: ["circle"],
     });
 }
+
+function daftar(){
+    window.location.assign('https://docs.google.com/forms/d/e/1FAIpQLSddhhzzSLLl7ofwivnbyqoQZt_csuiwj7acvKSQaWEUvewjOQ/viewform?usp=sf_link')
+}
