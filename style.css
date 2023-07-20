@@ -99,7 +99,6 @@ a{
 }
 
 .daftar p{
-    cursor: not-allowed;
     background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
 }
 
