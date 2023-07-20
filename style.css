@@ -88,7 +88,7 @@ a{
     color: var(--green4);
 }
 
-.daftar button{
+.daftar p{
     font-weight: bold;
     font-size: 1.75rem;
     background-color: var(--green3);
@@ -98,12 +98,12 @@ a{
     border-width: 0;
 }
 
-.daftar button:disabled{
+.daftar p{
     cursor: not-allowed;
     background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
 }
 
-.daftar button:hover{
+.daftar p{
     background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
 }
 
