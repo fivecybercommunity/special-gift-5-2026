@@ -91,16 +91,14 @@ a{
 .daftar p{
     font-weight: bold;
     font-size: 1.75rem;
-    /**background-color: var(--green3);**/
+    background-color: var(--green3);
     padding: 10px 30px;
     color: var(--white);
     border-radius: 15px;
     border-width: 0;
 }
 
-.daftar p{
-    background-color: color-mix(in srgb, var(--green3) 70%, var(--white) 30%);
-}
+
 
 footer{
     color: var(--green2);
